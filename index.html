@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Click Solution for Your Website</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Fira Code', monospace;
+        }
+
+        body {
+            background-color: #181818;
+            color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 1em;
+        }
+
+        /* Glassmorphism Header */
+        header {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            margin-top: 1em;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #1abc9c;
+        }
+
+        nav {
+            display: flex;
+            gap: 1em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            padding: 0.5em 1em;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #1abc9c;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 2em;
+        }
+
+        /* Text Section */
+        .text-section {
+            flex: 1;
+            padding-right: 2em;
+        }
+
+        .text-section h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            color: #f9f9f9;
+            margin-bottom: 0.5em;
+        }
+
+        .text-section p {
+            font-size: 1.1em;
+            color: #bbb;
+            margin-top: 1em;
+        }
+
+        /* Typewriter Animation */
+        .typewriter-text {
+            display: inline-block;
+            border-right: 2px solid #f9f9f9;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(30, end) infinite;
+            font-weight: 600;
+            color: #1abc9c;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 0;
+            }
+        }
+
+        /* Image Section */
+        .image-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Button */
+        .cta-button {
+            display: inline-block;
+            padding: 0.8em 1.5em;
+            background-color: #1abc9c;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 1.5em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Glassmorphic Header with Navigation Menu -->
+    <header>
+        <div class="logo">Dummy Website</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html">Products</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Text Section -->
+        <div class="text-section">
+            <h1>Just a Dummy <span class="typewriter-text">website</span> for Google Analytics.</h1>
+            <p>This website is just built to learn about Google Analytics tool for exp 5,6 of WSMA lab.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="rb_2143.png" alt="Illustration">
+        </div>
+    </div>
+
+</body>
+</html>
